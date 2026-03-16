@@ -10,12 +10,7 @@ export default function SiteShell({ children }: SiteShellProps) {
     <div className="min-h-screen">
       <header className="page-shell pt-8">
         <nav className="flex flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.svg" alt="GREYED logo" width={120} height={32} />
-            <span className="font-display text-2xl font-semibold tracking-tight">
-              GREYED
-            </span>
-          </Link>
+            <Image src="/logo.svg" alt="GREYED logo" width={150} height={40} />
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <Link className="nav-pill" href="/catalog">
               Catalog

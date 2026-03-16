@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   title: "GREYED | Premium Vape & Cigarette Marketplace",
   description:
     "A premium marketplace for curated vapes and cigarettes, designed for modern connoisseurs.",
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
