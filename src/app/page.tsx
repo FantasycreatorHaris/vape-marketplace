@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FeaturedProductSlider from "@/components/FeaturedProductSlider";
 import ProductCard from "@/components/ProductCard";
 import SiteShell from "@/components/SiteShell";
 import { catalog } from "@/lib/catalog";
@@ -40,28 +41,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="card relative overflow-hidden fade-up">
-          <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-[color:var(--glow)] blur-3xl" />
-          <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <p className="chip">Featured drop</p>
-              <p className="text-sm text-[color:var(--ink-soft)]">
-                New arrivals weekly
-              </p>
-            </div>
-            <h2 className="font-display text-3xl">Nightfall Velvet</h2>
-            <p className="text-[color:var(--ink-soft)]">
-              Velvet texture, deep notes, and an elegant finish crafted for
-              evening lounges.
-            </p>
-            <div className="flex items-center justify-between">
-              <p className="text-xl font-semibold">$70</p>
-              <Link className="btn" href="/product/nightfall-velvet">
-                View release
-              </Link>
-            </div>
-          </div>
-        </div>
+        <FeaturedProductSlider products={catalog} />
       </section>
 
       <section className="mt-16 space-y-6">

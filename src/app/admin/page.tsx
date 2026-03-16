@@ -1,6 +1,16 @@
+import Link from "next/link";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import SiteShell from "@/components/SiteShell";
 
-export default function AdminPage() {
+export default async function AdminPage() {
+  const cookieStore = await cookies();
+  const adminSession = cookieStore.get("admin_session")?.value;
+
+  if (adminSession !== "active") {
+    redirect("/admin/login");
+  }
+
   return (
     <SiteShell>
       <section className="space-y-6">
@@ -10,6 +20,11 @@ export default function AdminPage() {
           <p className="mt-3 text-[color:var(--ink-soft)]">
             Track member activity, release performance, and concierge requests.
           </p>
+          <div className="mt-4">
+            <Link className="btn btn-outline" href="/api/admin/logout">
+              Sign out admin
+            </Link>
+          </div>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {[

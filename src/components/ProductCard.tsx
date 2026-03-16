@@ -9,13 +9,13 @@ type ProductCardProps = {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="card flex h-full flex-col gap-5">
-      <div className="overflow-hidden rounded-2xl">
+      <div className="overflow-hidden rounded-2xl border border-[color:var(--line)] bg-[#fffdf9] p-3">
         <Image
           src={product.image}
           alt={product.imageAlt}
           width={640}
           height={420}
-          className="h-44 w-full object-cover"
+          className="h-52 w-full object-contain"
         />
       </div>
       <div className="flex items-start justify-between gap-3">

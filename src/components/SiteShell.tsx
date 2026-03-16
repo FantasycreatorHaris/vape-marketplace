@@ -10,7 +10,9 @@ export default function SiteShell({ children }: SiteShellProps) {
     <div className="min-h-screen">
       <header className="page-shell pt-8">
         <nav className="flex flex-wrap items-center justify-between gap-4">
+            <Link href="/">
             <Image src="/logo.svg" alt="GREYED logo" width={150} height={40} />
+            </Link>
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <Link className="nav-pill" href="/catalog">
               Catalog
@@ -20,9 +22,6 @@ export default function SiteShell({ children }: SiteShellProps) {
             </Link>
             <Link className="nav-pill" href="/account">
               Account
-            </Link>
-            <Link className="nav-pill" href="/admin">
-              Admin
             </Link>
             <Link className="nav-pill" href="/auth/sign-in">
               Sign in
@@ -34,28 +33,46 @@ export default function SiteShell({ children }: SiteShellProps) {
       <main className="page-shell mt-10">{children}</main>
 
       <footer className="page-shell border-t border-[color:var(--line)] py-10 text-sm">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 md:items-start">
           <div className="space-y-2">
             <p className="font-display text-lg">GREYED</p>
             <p className="text-[color:var(--ink-soft)]">
               A premium marketplace for refined vape and cigarette selections.
             </p>
           </div>
-          <div className="space-y-2">
-            <p className="uppercase tracking-[0.2em] text-xs text-[color:var(--ink-soft)]">
-              Concierge
+          <div className="space-y-2 md:justify-self-end">
+            <p>
+              <Link
+                href="/contact-us"
+                className="text-[color:var(--ink-soft)] hover:text-[color:var(--ink)]"
+              >
+                Contact Us
+              </Link>
             </p>
-            <p>Private releases</p>
-            <p>Membership care</p>
-            <p>Priority fulfillment</p>
-          </div>
-          <div className="space-y-2">
-            <p className="uppercase tracking-[0.2em] text-xs text-[color:var(--ink-soft)]">
-              Studio
+            <p>
+              <Link
+                href="/terms-and-conditions"
+                className="text-[color:var(--ink-soft)] hover:text-[color:var(--ink)]"
+              >
+                Terms &amp; Conditions
+              </Link>
             </p>
-            <p>Design philosophy</p>
-            <p>Press room</p>
-            <p>Careers</p>
+            <p>
+              <Link
+                href="/return-policy"
+                className="text-[color:var(--ink-soft)] hover:text-[color:var(--ink)]"
+              >
+                Return Policy
+              </Link>
+            </p>
+            <p>
+              <Link
+                href="/about-us"
+                className="text-[color:var(--ink-soft)] hover:text-[color:var(--ink)]"
+              >
+                About Us
+              </Link>
+            </p>
           </div>
         </div>
         <p className="mt-8 text-xs text-[color:var(--ink-soft)]">

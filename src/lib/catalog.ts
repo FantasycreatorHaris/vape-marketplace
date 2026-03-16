@@ -21,7 +21,7 @@ export const catalog: Product[] = [
     price: "$68",
     description:
       "A deep, layered blend designed for slow evenings and clean finishes.",
-    image: "/products/placeholder.svg",
+    image: "/products/obsidian-reserve.png",
     imageAlt: "Obsidian Reserve presentation kit",
     strength: "Medium",
     size: "20ml",
@@ -36,7 +36,7 @@ export const catalog: Product[] = [
     price: "$42",
     description:
       "A crisp, refined profile with a balanced draw and velvet aftertone.",
-    image: "/products/placeholder.svg",
+    image: "/products/cinder-classic.png",
     imageAlt: "Cinder Classic luxury pack",
     strength: "Smooth",
     size: "Pack of 10",
@@ -51,7 +51,7 @@ export const catalog: Product[] = [
     price: "$74",
     description:
       "Polished and modern, with an aromatic profile that lingers cleanly.",
-    image: "/products/placeholder.svg",
+    image: "/products/sable-noir.png",
     imageAlt: "Sable Noir artisan bottle",
     strength: "Rich",
     size: "25ml",
@@ -65,7 +65,7 @@ export const catalog: Product[] = [
     price: "$49",
     description:
       "Warm and elegant, tailored for slow rituals and understated moments.",
-    image: "/products/placeholder.svg",
+    image: "/products/emberline.png",
     imageAlt: "Emberline cigarette pack",
     strength: "Balanced",
     size: "Pack of 12",
@@ -79,7 +79,7 @@ export const catalog: Product[] = [
     price: "$62",
     description:
       "Soft citrus notes with a refined finish that stays smooth.",
-    image: "/products/placeholder.svg",
+    image: "/products/golden-haze.png",
     imageAlt: "Golden Haze limited bottle",
     strength: "Light",
     size: "18ml",
@@ -93,7 +93,7 @@ export const catalog: Product[] = [
     price: "$70",
     description:
       "Velvety texture with a subtle glow, crafted for evening lounges.",
-    image: "/products/placeholder.svg",
+    image: "/products/nightfall-velvet.png",
     imageAlt: "Nightfall Velvet presentation kit",
     strength: "Medium",
     size: "22ml",
